@@ -1,0 +1,26 @@
+{
+  "name": "corporatte/environment",
+  "description": "A Simple Enviroment Lib",
+  "type": "",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "corporatte",
+      "email": "corporatte@gmail.com"
+    },
+    {
+      "name": "jjsquady",
+      "email": "jorge.techinfo@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Corporatte\\Environment\\": ""
+    },
+    "files": []
+  },
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "5.7.*"
+  }
+}
