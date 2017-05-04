@@ -29,6 +29,11 @@ class Environment implements EnvironmentContract
 
             foreach ($envArray as $pair) {
 
+                /* Check if its a commented line */
+                if (strpos(trim($pair), ";") === 0) {
+                    continue;
+                }
+
                 $envVars = preg_split("/ ?= ?/", trim($pair));
 
                 if (empty($envVars[0]) || count($envVars) != 2) {
